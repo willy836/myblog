@@ -17,7 +17,7 @@
         </article> 
     @endforeach
 @else
-    
+    <p>There are no posts. Add your first post.</p>
 @endif
 
 @endsection
