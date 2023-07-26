@@ -6,7 +6,7 @@
 <article>
     <h4>{{ $post->title }}</h4>
     <p>
-        By <a href="#">{{ $post->author->name }}</a> in <a href="/category/{{ $post->category->slug }}/posts">{{ $post->category->name }}</a>
+        By <a href="/authors/{{ $post->author->id }}">{{ $post->author->name }}</a> in <a href="/category/{{ $post->category->slug }}/posts">{{ $post->category->name }}</a>
     </p>
     <p>{{ $post->body }}</p>
     <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-primary">Edit Post</a>

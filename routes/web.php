@@ -3,6 +3,7 @@
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +24,4 @@ Route::resource('posts', PostController::class);
 
 Route::get('category/{category_id}/posts', [CategoryController::class, 'showPosts'])->name('category.posts');
 
+Route::get('authors/{author}', [UserController::class, 'showAuthorPosts'])->name('authors.user_id');
