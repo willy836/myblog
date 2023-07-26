@@ -15,29 +15,34 @@ class DatabaseSeeder extends Seeder
     {
         User::truncate();
 
-        User::factory(5)->create();
+        // User::factory(5)->create();
 
-        // User::factory()->create([
-        //     [
-        //         'name' => 'Ms. Rebekak Roberts',
-        //         'email' => 'rebekah@gmail.com'
-        //     ],
-        //     [
-        //         'name' => 'Mr. Chelsey Murphy Jr.',
-        //         'email' => 'chelsey@gmail.com'
-        //     ],
-        //     [
-        //         'name' => 'Mrs. Grace Carter',
-        //         'email' => 'grace@gmail.com'
-        //     ],
-        //     [
-        //         'name' => 'Reynold Mante',
-        //         'email' => 'reynold@gmail.com'
-        //     ],
-        //     [
-        //         'name' => 'Graham Ernest',
-        //         'email' => 'graham@gmail.com'
-        //     ],
-        // ]);
+        User::factory()->createMany([
+            [
+                'name' => 'Ms. Rebekah Roberts',
+                'username' => 'rebekah',
+                'email' => 'rebekah@gmail.com'
+            ],
+            [
+                'name' => 'Mr. Chelsey Murphy Jr.',
+                'username' => 'chelsey',
+                'email' => 'chelsey@gmail.com'
+            ],
+            [
+                'name' => 'Mrs. Grace Carter',
+                'username' => 'grace',
+                'email' => 'grace@gmail.com'
+            ],
+            [
+                'name' => 'Reynold Mante',
+                'username' => 'reynold',
+                'email' => 'reynold@gmail.com'
+            ],
+            [
+                'name' => 'Graham Ernest',
+                'username' => 'graham',
+                'email' => 'graham@gmail.com'
+            ],
+        ]);
     }
 }

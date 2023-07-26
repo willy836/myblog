@@ -7,10 +7,10 @@ use App\Models\User;
 
 class UserController extends Controller
 {
-    public function showAuthorPosts ($user_id)
+    public function showAuthorPosts ($username)
     {
-        $author = User::find($user_id);
-        // dd($author);
+        // $author = User::find($user_id);
+        $author = User::where('username', $username)->first();
 
         if(!$author){
             abort(404);
