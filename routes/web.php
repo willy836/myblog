@@ -21,4 +21,4 @@ Route::get('/', function () {
 
 Route::resource('posts', PostController::class);
 
-Route::get('categories/{category_id}/posts', [CategoryController::class, 'showPosts'])->name('categories.posts');
+Route::get('category/{category_id}/posts', [CategoryController::class, 'showPosts'])->name('category.posts');

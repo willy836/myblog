@@ -7,9 +7,10 @@ use App\Models\Category;
 
 class CategoryController extends Controller
 {
-    public function showPosts($category_id)
+    public function showPosts($category_slug)
     {
-        $category = Category::find($category_id);
+        // $category = Category::find($category_id);
+        $category = Category::where('slug', $category_slug)->first();
 
         if(!$category){
             abort(404);
@@ -17,7 +18,7 @@ class CategoryController extends Controller
 
         $posts = $category->posts;
 
-        return view('category_posts', [
+        return view('category', [
             'category' => $category,
             'posts' => $posts
         ]);
