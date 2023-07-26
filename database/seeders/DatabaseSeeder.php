@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\User;
 
 class DatabaseSeeder extends Seeder
 {
@@ -12,11 +13,31 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
+        User::truncate();
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
+        User::factory(5)->create();
+
+        // User::factory()->create([
+        //     [
+        //         'name' => 'Ms. Rebekak Roberts',
+        //         'email' => 'rebekah@gmail.com'
+        //     ],
+        //     [
+        //         'name' => 'Mr. Chelsey Murphy Jr.',
+        //         'email' => 'chelsey@gmail.com'
+        //     ],
+        //     [
+        //         'name' => 'Mrs. Grace Carter',
+        //         'email' => 'grace@gmail.com'
+        //     ],
+        //     [
+        //         'name' => 'Reynold Mante',
+        //         'email' => 'reynold@gmail.com'
+        //     ],
+        //     [
+        //         'name' => 'Graham Ernest',
+        //         'email' => 'graham@gmail.com'
+        //     ],
         // ]);
     }
 }
