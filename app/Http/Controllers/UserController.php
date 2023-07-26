@@ -3,24 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Category;
+use App\Models\User;
 
-class CategoryController extends Controller
+class UserController extends Controller
 {
-    public function showPosts($category_slug)
+    public function showAuthorPosts ($username)
     {
-        // $category = Category::find($category_id);
-        $category = Category::where('slug', $category_slug)->first();
+        // $author = User::find($user_id);
+        $author = User::where('username', $username)->first();
 
-        if(!$category){
+        if(!$author){
             abort(404);
         }
 
-        $posts = $category->posts;
-        // $posts = $category->posts->load(['category', 'author']);
+        $posts = $author->posts;
+        // $posts = $author->posts->load(['category', 'author']);
 
-        return view('category', [
-            'category' => $category,
+        return view('author', [
+            'author' => $author,
             'posts' => $posts
         ]);
     }
