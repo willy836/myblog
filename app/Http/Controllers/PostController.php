@@ -12,7 +12,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::orderBy('created_at', 'desc')->get();
+        $posts = Post::with('category')->orderBy('created_at', 'desc')->get();
 
         return view('posts.index', [
             'posts' => $posts
@@ -34,7 +34,8 @@ class PostController extends Controller
     {
         $validatedData = $request->validate([
             'title' => 'required | min:3 |max:20',
-            'body' => 'required |min:50'
+            'body' => 'required |min:50',
+            'category_id' => 'required'
         ]);
 
         Post::create($validatedData);

@@ -7,6 +7,9 @@
     @csrf
     @method('PATCH')
     <div class="form-group mb-3">
+        <input type="text" name="category_id" class="form-control" value="{{ $post->category->name }}">
+    </div>
+    <div class="form-group mb-3">
         <input type="text" name="title" class="form-control" value="{{ $post->title }}">
     </div>
     <div class="form-group mb-3">

@@ -11,6 +11,7 @@
        <article class="card mb-3">
         <div class="card-body">
             <h4>{{ $post->title }}</h4>
+            <a href="/category/{{ $post->category->slug }}/posts">{{ $post->category->name }}</a>
             <p>{{ Str::limit($post->body, 200, '...') }}</p>
             <a href="{{ route('posts.show', $post->id) }}">See Full Post</a>
         </div>

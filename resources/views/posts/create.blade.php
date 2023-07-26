@@ -6,6 +6,9 @@
 <form action="{{ route('posts.store') }}" method="POST">
     @csrf
     <div class="form-group mb-3">
+        <input type="text" name="category_id" class="form-control" placeholder="Category">
+    </div>
+    <div class="form-group mb-3">
         <input type="text" name="title" class="form-control" placeholder="title">
     </div>
     <div class="form-group mb-3">
