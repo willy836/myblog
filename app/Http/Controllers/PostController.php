@@ -34,7 +34,8 @@ class PostController extends Controller
     {
         $validatedData = $request->validate([
             'title' => 'required | min:3 |max:20',
-            'body' => 'required |min:50'
+            'body' => 'required |min:50',
+            'category_id' => 'required'
         ]);
 
         Post::create($validatedData);

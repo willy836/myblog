@@ -3,9 +3,25 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Category;
 
 class CategoryController extends Controller
 {
+    public function showPosts($category_id)
+    {
+        $category = Category::find($category_id);
+
+        if(!$category){
+            abort(404);
+        }
+
+        $posts = $category->posts;
+
+        return view('category_posts', [
+            'category' => $category,
+            'posts' => $posts
+        ]);
+    }
     /**
      * Display a listing of the resource.
      */
