@@ -6,9 +6,8 @@
 <article>
     <h4>{{ $post->title }}</h4>
     <p>
-        By <a href="#">{{ $post->user->name }}</a> in <a href="/category/{{ $post->category->slug }}/posts">{{ $post->category->name }}</a>
+        By <a href="#">{{ $post->author->name }}</a> in <a href="/category/{{ $post->category->slug }}/posts">{{ $post->category->name }}</a>
     </p>
-    {{-- <h6>{{ $post->category->name }}</h6> --}}
     <p>{{ $post->body }}</p>
     <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-primary">Edit Post</a>
     <form action="{{ route('posts.destroy', $post->id) }}" method="POST" class="d-inline">

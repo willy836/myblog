@@ -22,3 +22,4 @@ Route::get('/', function () {
 Route::resource('posts', PostController::class);
 
 Route::get('category/{category_id}/posts', [CategoryController::class, 'showPosts'])->name('category.posts');
+

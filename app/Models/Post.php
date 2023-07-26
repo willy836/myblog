@@ -12,9 +12,9 @@ class Post extends Model
 
     protected $fillable = ['title', 'body', 'category_id'];
 
-    public function user() : BelongsTo
+    public function author() : BelongsTo
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'user_id');
     }
 
     public function category() : BelongsTo
