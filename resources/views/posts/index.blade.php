@@ -15,7 +15,7 @@
         </div>
     </div>
     <form action="#" method="GET" class="w-30">
-        <input type="text" name="search" class="form-control" placeholder="Find something">
+        <input type="text" name="search" class="form-control" value="{{ request('search') }}" placeholder="Find something">
     </form>
 </div>
 <a href="{{ route('posts.create') }}" class="btn btn-primary mb-3">Create Post</a>
