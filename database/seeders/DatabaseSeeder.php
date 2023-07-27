@@ -19,17 +19,17 @@ class DatabaseSeeder extends Seeder
 
         User::factory()->createMany([
             [
-                'name' => 'Ms. Rebekah Roberts',
+                'name' => 'Rebekah Roberts',
                 'username' => 'rebekah',
                 'email' => 'rebekah@gmail.com'
             ],
             [
-                'name' => 'Mr. Chelsey Murphy Jr.',
+                'name' => 'Chelsey Murphy',
                 'username' => 'chelsey',
                 'email' => 'chelsey@gmail.com'
             ],
             [
-                'name' => 'Mrs. Grace Carter',
+                'name' => 'Grace Carter',
                 'username' => 'grace',
                 'email' => 'grace@gmail.com'
             ],
