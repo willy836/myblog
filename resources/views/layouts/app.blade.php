@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <style>
         body {
           min-height: 100vh; /* Set the minimum height of the body to fill the entire viewport */
@@ -29,12 +30,23 @@
           width:100%;
           height:auto;
         }
+        .categories-bg{
+          position: absolute;
+          z-index: 1;
+          background-color: #eee;
+          text-decoration: none;
+          color: #333;
+        }
 
-        .links {
-          width:40%;
-          justify-self: end;
-          display: flex;
-          justify-content: space-between;
+        .categories-bg a {
+          width: 176px;
+          text-decoration: none;
+          color: #333;
+        }
+
+        .categories-bg a:hover {
+          text-decoration: none;
+          color: #0d6efd;
         }
       </style>
 </head>

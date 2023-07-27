@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Post;
+use App\Models\Category;
 
 class PostController extends Controller
 {
@@ -14,9 +15,11 @@ class PostController extends Controller
     {
         // $posts = Post::with('category', 'author')->orderBy('created_at', 'desc')->get();
         $posts = Post::orderBy('created_at', 'desc')->get();
+        $categories = Category::all();
 
         return view('posts.index', [
-            'posts' => $posts
+            'posts' => $posts,
+            'categories' => $categories
         ]);
     }
 

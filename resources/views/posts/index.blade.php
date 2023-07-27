@@ -6,7 +6,14 @@
 
 <h2 class="text-center my-4">Latest blog posts</h2>
 <div class="d-flex justify-content-center">
-    <p class="p-2">Category</p>
+    <div x-data="{show: false}" class="me-3">
+        <button @click="show=!show" @click.away="show=false" class="mb-1 py-1 px-5 border border-muted rounded">Categories</button>
+        <div x-show="show" style="display: none;" class="categories-bg py-2 rounded">
+            @foreach ($categories as $category)
+            <a class="d-block btn px-2" href="/category/{{ $category->slug }}/posts">{{ $category->name }}</a>
+            @endforeach
+        </div>
+    </div>
     <form action="" method="POST" class="w-30">
         <input type="text" class="form-control" placeholder="Find something">
     </form>
