@@ -13,6 +13,15 @@ class Post extends Model
     protected $fillable = ['title', 'body', 'category_id'];
     protected $with = ['category', 'author'];
 
+    public function scopeFilter($query)
+    {
+        if(request('search')){
+            $query
+            ->where('title', 'like', '%' . request('search') . '%' )
+            ->orWhere('body', 'like', '%' . request('search') . '%');
+        }
+    }
+
     public function author() : BelongsTo
     {
         return $this->belongsTo(User::class, 'user_id');

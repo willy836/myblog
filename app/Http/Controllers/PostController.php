@@ -14,7 +14,7 @@ class PostController extends Controller
     public function index()
     {
         // $posts = Post::with('category', 'author')->orderBy('created_at', 'desc')->get();
-        $posts = Post::orderBy('created_at', 'desc')->get();
+        $posts = Post::orderBy('created_at', 'desc')->filter()->get();
         $categories = Category::all();
 
         return view('posts.index', [
