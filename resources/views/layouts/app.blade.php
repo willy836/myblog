@@ -20,10 +20,21 @@
     
         .footer {
           background-color: #343a40;
-          /* position: absolute; */
           bottom: 0;
           color: #fff;
           padding: 20px 0;
+        }
+
+        img {
+          width:100%;
+          height:auto;
+        }
+
+        .links {
+          width:40%;
+          justify-self: end;
+          display: flex;
+          justify-content: space-between;
         }
       </style>
 </head>
@@ -38,7 +49,10 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarText">
             <ul class="navbar-nav ml-auto mb-2 mb-lg-0 d-flex gap-4">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/posts">Posts</a>
               </li>
               <li class="nav-item d-inline">
                 <a class="nav-link bg-primary text-white rounded" href="#">Subscribe for updates</a>

@@ -4,7 +4,13 @@
 
 @include('partials.messages')
 
-<h2 class="text-center my-4">All Posts</h2>
+<h2 class="text-center my-4">Latest blog posts</h2>
+<div class="d-flex justify-content-center">
+    <p class="p-2">Category</p>
+    <form action="" method="POST" class="w-30">
+        <input type="text" class="form-control" placeholder="Find something">
+    </form>
+</div>
 <a href="{{ route('posts.create') }}" class="btn btn-primary mb-3">Create Post</a>
 @if (count($posts) > 0)
     @foreach ($posts as $post)
