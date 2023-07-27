@@ -52,40 +52,6 @@
         <div class="container">
             @yield('content')
         </div>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsum ea optio minima voluptates 
-            veniam debitis esse animi molestias, cumque officiis error rerum aperiam iusto. Cumque veritatis 
-            consectetur iste dignissimos adipisci quae porro voluptates sit iure similique, qui dicta pariatur 
-            doloribus quo labore repellat, dolorum ex omnis accusamus. Autem natus dignissimos vero possimus cum 
-            maxime animi at rem facilis vel voluptate ad accusamus, vitae adipisci illum asperiores neque incidunt 
-            officia ullam a ipsam fugiat sunt doloremque nemo? Libero dicta unde, nihil veniam quas officiis, 
-            praesentium aliquam expedita perferendis sunt velit voluptatibus minima maxime voluptate vero 
-            consequatur cumque enim explicabo. Nam quas, veniam nesciunt officiis impedit culpa at unde ex velit 
-            quidem eos tempore nulla, officia consequuntur voluptates quos veritatis totam. Libero similique delectus 
-            quas, cupiditate totam temporibus amet ea corrupti dolor reprehenderit magni voluptate soluta ut, sed 
-            quasi excepturi ipsa exercitationem explicabo saepe praesentium! Dolore ex veritatis assumenda illo 
-            recusandae, vero culpa, ipsam molestiae quasi nisi et aperiam! Reprehenderit, commodi blanditiis harum 
-            totam consequatur vitae provident iste placeat, laborum suscipit explicabo impedit! Earum sapiente eum, 
-            dolore optio modi nulla recusandae vero repellendus laborum ipsum facere doloribus asperiores et odio 
-            blanditiis fuga officiis minus impedit illum! Magni quaerat maiores repellendus eos?
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsum ea optio minima voluptates 
-            veniam debitis esse animi molestias, cumque officiis error rerum aperiam iusto. Cumque veritatis 
-            consectetur iste dignissimos adipisci quae porro voluptates sit iure similique, qui dicta pariatur 
-            doloribus quo labore repellat, dolorum ex omnis accusamus. Autem natus dignissimos vero possimus cum 
-            maxime animi at rem facilis vel voluptate ad accusamus, vitae adipisci illum asperiores neque incidunt 
-            officia ullam a ipsam fugiat sunt doloremque nemo? Libero dicta unde, nihil veniam quas officiis, 
-            praesentium aliquam expedita perferendis sunt velit voluptatibus minima maxime voluptate vero 
-            consequatur cumque enim explicabo. Nam quas, veniam nesciunt officiis impedit culpa at unde ex velit 
-            quidem eos tempore nulla, officia consequuntur voluptates quos veritatis totam. Libero similique delectus 
-            quas, cupiditate totam temporibus amet ea corrupti dolor reprehenderit magni voluptate soluta ut, sed 
-            quasi excepturi ipsa exercitationem explicabo saepe praesentium! Dolore ex veritatis assumenda illo 
-            recusandae, vero culpa, ipsam molestiae quasi nisi et aperiam! Reprehenderit, commodi blanditiis harum 
-            totam consequatur vitae provident iste placeat, laborum suscipit explicabo impedit! Earum sapiente eum, 
-            dolore optio modi nulla recusandae vero repellendus laborum ipsum facere doloribus asperiores et odio 
-            blanditiis fuga officiis minus impedit illum! Magni quaerat maiores repellendus eos?
-        </p>
       </main>
     
 
